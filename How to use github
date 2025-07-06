@@ -1,0 +1,111 @@
+How to use github
+ Sign up & install Git
+Create a GitHub account: Go to https://github.com and sign up.
+
+Install Git: Download and install Git from https://git-scm.com.
+
+🗂️ Key Concepts
+Term	Meaning
+Repository (Repo)	A folder on GitHub where your project lives.
+Commit	A snapshot of your changes.
+Branch	A parallel line of development.
+Merge	Combining branches together.
+Pull Request (PR)	A request to merge changes into another branch.
+Clone	Download a GitHub repo to your local machine.
+Push	Upload your local commits to GitHub.
+Pull	Download changes from GitHub to your machine.
+
+🚀 Common Workflows
+2. Create a New Repository
+On GitHub, click New repository.
+
+Give it a name & description.
+
+Choose public or private.
+
+(Optional) Initialize with a README.
+
+3. Clone a Repository
+To work locally, run:
+
+bash
+Copy
+Edit
+git clone https://github.com/username/repo-name.git
+cd repo-name
+4. Make Changes
+Edit files as needed. Then:
+
+bash
+Copy
+Edit
+git status      # See what changed
+git add .       # Stage all changes
+git commit -m "Describe your changes"
+5. Push Changes to GitHub
+bash
+Copy
+Edit
+git push origin main
+(Replace main with your branch name.)
+
+6. Create a Branch
+To safely develop new features:
+
+bash
+Copy
+Edit
+git checkout -b new-feature
+After changes:
+
+bash
+Copy
+Edit
+git add .
+git commit -m "Add new feature"
+git push origin new-feature
+7. Open a Pull Request
+Go to your repo on GitHub.
+
+Click Compare & pull request.
+
+Add a description & reviewers.
+
+Click Create pull request.
+
+8. Merge & Delete Branch
+After review, click Merge pull request.
+
+Optionally delete the branch.
+
+🔄 Keeping Up To Date
+If others pushed changes:
+
+bash
+Copy
+Edit
+git pull origin main
+To update your feature branch:
+
+bash
+Copy
+Edit
+git checkout new-feature
+git merge main
+✨ Tips & Best Practices
+✅ Commit often with clear messages.
+✅ Use branches for features & fixes.
+✅ Pull before pushing to avoid conflicts.
+✅ Review code in pull requests before merging.
+
+📚 Useful Git Commands Reference
+Command	Description
+git status	See current changes.
+git log	View commit history.
+git diff	See what’s changed.
+git branch	List branches.
+git checkout branch-name	Switch branches.
+git merge branch-name	Merge into current branch.
+git pull	Fetch & merge from remote.
+git push	Upload changes to GitHub.
+
